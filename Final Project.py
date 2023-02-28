@@ -50,8 +50,6 @@ for page in range(1,41):
         VGA = re.match(r'.+\s*:\s*(.*)<' ,str(specs[3]) ).group(1)
         DISPLAY = re.match(r'<li>Display\s*:*\s*(.*)<' ,str(specs[4]) ).group(1)
 
-        #Print(CPU , RAM , STORAGE , VGA , DISPLAY , '\n' , Price ,'\n')
-        #Print(type(CPU),type(RAM),type(STORAGE), type(VGA), type(DISPLAY) , type(Price),type(Name))
         cursor.execute("INSERT INTO `laptops` VALUES( '%s', '%s', '%s', '%s' , '%s' , '%s' , '%i');" %(Name, CPU, RAM, STORAGE, VGA, DISPLAY, Price))
         dbc.commit()
 # So far, you managed to fetch the data in order for printing , also  save the data in Database and then...
