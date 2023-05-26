@@ -5,7 +5,7 @@ Take data from " https://adak.shop/ " regarding to laptop specs and their price 
 Required libraries:
 
 scikit-learn
-bs4
+bs4\n
 requests
 mysql.connector (if you work with MySql Database)
 sklearn
